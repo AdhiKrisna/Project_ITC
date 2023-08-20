@@ -1,0 +1,272 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- STYLE CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="src/css/home.css">
+    <title>Homepage</title>
+</head>
+
+<body> 
+    <nav>
+        <div class="placeholder-logo">
+            <img src="src/logo3.png" alt="logo" width="50px" class="logos">
+        </div>
+        <ul>
+                <a href="index.html">
+                    <li>
+                    Reservation
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                    Airlines Partner
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                    Airport
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                    Top up
+                    </li>
+                </a>
+                <a href="#"><li>
+                    Your Ticket
+                </li>
+            </a>
+        </ul>
+
+            <div class="placeholder-profile">
+                <img src="src/user.jpg" alt="profile" class="profile" onclick="dropDownMenu()">
+            </div>
+
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <h2>
+                            Username | Balance
+                        </h2>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="src/editProfile.png" alt="profile">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="src/setting.png" alt="profile">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="src/help.png" alt="profile">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="src/logout.png" alt="profile">
+                        <p>Log out</p>
+                        <span>></span> 
+                    </a>
+                </div>
+            </div>      
+    </nav>
+            
+
+        <hr class="nav-hr">
+
+        <main>
+            <form action="">    
+                <h3>Ticket Reservation</h3>
+                <hr>
+
+                <div class="form-container">
+                    <div class="form-side">
+                        <div class="passenger">
+                            <label for="passengerName">
+                            Passenger Name
+                            </label>
+                            <input type="text" name="passengerName" id="passengerName" placeholder="Passenger Name..."  autofocus>
+                        </div>
+                        <div class="passenger">
+                            <label for="passengerID">
+                            Passenger ID
+                            </label>
+                            <input type="number" name="passengerID" id="passengerID" placeholder="Passenger ID..."  autofocus>
+                        </div>
+                        <div class="airport">
+                            <div class="departure">
+                                <label for="departure">
+                                Departure
+                                </label>
+                                <select name="departure" id="departure" placeholder="Departure..."  autofocus>
+                                    <optgroup label="Sumatera">
+                                        <option value="Banda Aceh">Banda Aceh | Sultan Iskandar Muda (BTJ)</option>
+                                        <option value="Batam">Batam | Hang Nadim (BTH)</option>
+                                        <option value="Deli Serdang">Deli Serdang | Kualanamu (KNO)</option>
+                                        <option value="Bandar Lampung">Bandar Lampung | Radin Inten II (TKG)</option>
+                                        <option value="Padang">Padang | Minangkabau (PDG)</option>
+                                        <option value="Palembang">Palembang | Sultan Mahmud Badarrudin (PLM)</option>
+                                        <option value="Pekanbaru">Pekanbaru | Sultan Syarif Kasim II (PKU)</option>
+                                        <option value="Sumatera">Bangka Belitung | H.A.S Hanandjoeddin (TJQ)</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa">
+                                        <option value="Bandung">Bandung | Husein Sastranegara (BDO)</option>
+                                        <option value="Jakarta">Jakarta | Halim Perdanakusuma (HLP)</option>
+                                        <option value="Tangerang">Tangerang | Soekarno–Hatta (CGK)</option>
+                                        <option value="Majalengka">Majalengka | Kertajati (KJT)</option>
+                                    </optgroup>
+                                    <optgroup label="Bali">
+                                        <option value="Denpasar">Denpasar | I Gusti Ngurah Rai (DPS)</option>
+                                    </optgroup>
+                                    <optgroup label="Nusa Tenggara">
+                                        <option value="Bima">Bima | Sultan Muhammad Salahudin (BMU)</option>
+                                        <option value="Mataram">Mataram | Zainuddin Abdul Madjid (LOP)</option>
+                                        <option value="Ende">Ende | H. Hasan Aroeboesman (ENE)</option>
+                                    </optgroup>
+                                    <optgroup label="Kalimantan">
+                                        <option value="Balikpapan ">Balikpapan | Sultan Aji Muhammad Sulaiman Sepinggan (BPN)</option>
+                                        <option value="Pontianak">Pontianak | Supadio (PNK)</option>
+                                        <option value="Samarinda ">Samarinda | APT Pranoto (AAP)</option>
+                                        <option value="Tarakan ">Tarakan | Juwata (TRK)</option>
+                                    </optgroup>
+                                    <optgroup label="Sulawesi">
+                                        <option value="Makassar">Makassar | Sultan Hasssanudin (UPG)</option>
+                                        <option value="Manado">Manado | Sam Ratulangi (MDC)</option>
+                                        <option value="Palu">Palu | Masovu (PLW)</option>
+                                    </optgroup>
+                                    <optgroup label="Papua">
+                                        <option value="Biak">Biak | Frans Kaisiepo (BIK)</option>
+                                        <option value="Jayapura">Jayapura | Sentani (DJJ)</option>
+                                        <option value="Timika">Timika | Moses Kilangin (TIM)</option>
+                                    </optgroup>
+                                </select>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="form-side">
+                        <div class="date">
+                            <div class="departure-date">
+                                <label for="departure_date">Depart</label>
+                                <input type="date" id="departure_date" name="departure_date">
+                            </div>
+                            <div class="return-date">
+                                <label for="return_date">Return</label>
+                                <input type="date" id="return_date" name="return_date">
+                            </div>
+                        </div>
+                        <div class="flight">
+                            <div class="airline">
+                                <label for="airline">Airline</label>
+                                <select name="airline" id="airline" placeholder="airline..."  autofocus>
+                                    <option value="Singapure Airline">Singapure Airline</option>
+                                    <option value="Garuda Indonesia">Garuda Indonesia</option>
+                                    <option value="Lion Air">Lion Air</option>
+                                    <option value="Citilink">Citilink</option>
+                                    <option value="Batik Air">Batik Air</option>
+                                    <option value="Citilink">Citilink</option>
+                                    <option value="Sriwijaya Air">Sriwijaya Air</option>
+                                   
+                                </select>
+                            </div>
+                            <div class="class">
+                                <label for="class">Class</label>
+                                    <select name="class" id="class" placeholder="class..."  autofocus>
+                                    <option value="Economy">Economy</option>
+                                    <option value="Business">Business</option>
+                                    <option value="VIP">VIP</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="airport">
+                            <div class="arrival">
+                                <label for="arrival">
+                                Arrival
+                                </label>
+                                <select name="arrival" id="arrival" placeholder="Arrival..."  autofocus>
+                                    <optgroup label="Sumatera">
+                                        <option value="Banda Aceh">Banda Aceh | Sultan Iskandar Muda (BTJ)</option>
+                                        <option value="Batam">Batam | Hang Nadim (BTH)</option>
+                                        <option value="Deli Serdang">Deli Serdang | Kualanamu (KNO)</option>
+                                        <option value="Bandar Lampung">Bandar Lampung | Radin Inten II (TKG)</option>
+                                        <option value="Padang">Padang | Minangkabau (PDG)</option>
+                                        <option value="Palembang">Palembang | Sultan Mahmud Badarrudin (PLM)</option>
+                                        <option value="Pekanbaru">Pekanbaru | Sultan Syarif Kasim II (PKU)</option>
+                                        <option value="Sumatera">Bangka Belitung | H.A.S Hanandjoeddin (TJQ)</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa">
+                                        <option value="Bandung">Bandung | Husein Sastranegara (BDO)</option>
+                                        <option value="Jakarta">Jakarta | Halim Perdanakusuma (HLP)</option>
+                                        <option value="Tangerang">Tangerang | Soekarno–Hatta (CGK)</option>
+                                        <option value="Majalengka">Majalengka | Kertajati (KJT)</option>
+                                    </optgroup>
+                                    <optgroup label="Bali">
+                                        <option value="Denpasar">Denpasar | I Gusti Ngurah Rai (DPS)</option>
+                                    </optgroup>
+                                    <optgroup label="Nusa Tenggara">
+                                        <option value="Bima">Bima | Sultan Muhammad Salahudin (BMU)</option>
+                                        <option value="Mataram">Mataram | Zainuddin Abdul Madjid (LOP)</option>
+                                        <option value="Ende">Ende | H. Hasan Aroeboesman (ENE)</option>
+                                    </optgroup>
+                                    <optgroup label="Kalimantan">
+                                        <option value="Balikpapan ">Balikpapan | Sultan Aji Muhammad Sulaiman Sepinggan (BPN)</option>
+                                        <option value="Pontianak">Pontianak | Supadio (PNK)</option>
+                                        <option value="Samarinda ">Samarinda | APT Pranoto (AAP)</option>
+                                        <option value="Tarakan ">Tarakan | Juwata (TRK)</option>
+                                    </optgroup>
+                                    <optgroup label="Sulawesi">
+                                        <option value="Makassar">Makassar | Sultan Hasssanudin (UPG)</option>
+                                        <option value="Manado">Manado | Sam Ratulangi (MDC)</option>
+                                        <option value="Palu">Palu | Masovu (PLW)</option>
+                                    </optgroup>
+                                    <optgroup label="Papua">
+                                        <option value="Biak">Biak | Frans Kaisiepo (BIK)</option>
+                                        <option value="Jayapura">Jayapura | Sentani (DJJ)</option>
+                                        <option value="Timika">Timika | Moses Kilangin (TIM)</option>
+                                    </optgroup>
+                                </select>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="end-form">
+                    <div class="return">
+                        <h5>Return</h5>
+                        <form action="" method="post">
+                            <label class="switch" >
+                                <input type="checkbox" name="switchReturn">
+                                <span class="slider"></span>
+                            </label>
+                        </form>
+                    </div>
+                        <button>
+                            Submit
+                        </button>
+                </div>
+            </form>
+            <img src="src/logo3.png" class="background-logo">
+        </main>
+            
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
